@@ -1,0 +1,10 @@
+{% extends 'social/layout.html' %}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" class="post">Publicar!</button>
+    <button type="button"><a href="{% url 'feed' %}">Cancelar</a></button>
+</form>
+{% endblock %}

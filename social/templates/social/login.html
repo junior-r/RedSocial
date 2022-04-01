@@ -1,0 +1,10 @@
+{% extends 'social/layout.html' %}
+
+{% block content %}
+    <form action="" method="post" class="form">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" id="submit">Iniciar Sesión</button>
+        <button type="reset" id="reset">Limpiar</button>
+    </form>
+{% endblock %}
